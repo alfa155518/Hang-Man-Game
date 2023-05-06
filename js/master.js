@@ -74,10 +74,6 @@ let objectWordsJson =  fetch("js/words.json").then((result) => {
          // set the wrong attempts
             wrongAttempts = 0;
 
-        // set the true attempts
-            trueAttempts = 0;
-
-    
             let theDraw = document.querySelector(".the-draw")
         
         document.addEventListener("click", e => {
@@ -107,11 +103,7 @@ let objectWordsJson =  fetch("js/words.json").then((result) => {
     
                 });
 
-                if (trueAttempts.length === lettersGuess.length) {
-                    trueAttempts++;
-                    console.log(44444)
-                }
-    
+                // if the Word equal false 
                 if (theStatus !== true) {
     
                     wrongAttempts++;
